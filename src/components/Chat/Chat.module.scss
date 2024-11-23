@@ -1,0 +1,94 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 1.5px solid rgba(18,18,18);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+    border: 1.5px solid rgba(18,18,18);
+    color: white;
+    backdrop-filter: blur(8px);
+    font-weight: bold;
+
+    .clearButton {
+      background: transparent;
+      color: #ffff;
+      border: 1.5px solid rgba(18,18,18);
+      padding: 10px 16px;
+      transition: all 0.1s ease-out;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(18, 18, 18);
+      }
+    }
+  }
+
+  .messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+    .emptyChat {
+      text-align: center;
+      color: #ffff;
+      font-size: 17px;
+      font-weight: bold;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .inputContainer {
+    display: flex;
+    padding: 15px 10px;
+    align-items: center;
+    border: 1.5px solid rgba(18,18,18);
+    background: #000;
+
+    .input {
+      flex: 1;
+      padding: 10px;
+      color: #ffff;
+      outline: none;
+      background: transparent;
+      border: 1.5px solid rgba(18,18,18);
+      border-radius: 9px;
+      transition: all 0.1s ease-out;
+      font-size: 16px;
+
+      &:focus {
+        border: 1.5px solid #ffff;
+      }
+    }
+
+    .sendButton {
+      margin-left: 10px;
+      font-weight: 600;
+      padding: 10px 20px;
+      background-color: #ffff;
+      color: #000;
+      border: 1.5px solid #ffff;
+      transition: all 0.1s ease-in-out;
+      border-radius: 8px;
+      cursor: pointer;
+      height: 42px;
+
+      &:hover {
+        background: rgba(18,18,18);
+        color: #ffff;
+      }
+    }
+  }
+}

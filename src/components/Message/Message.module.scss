@@ -1,0 +1,29 @@
+.message {
+  margin-bottom: 15px;
+  border-radius: 16px;
+  line-height: 1.4;
+
+  .generating {
+    font-style: bold;
+    color: #ffffff7e;
+  }
+}
+
+.userMessage {
+  background: #ffff;
+  color: #000;
+  margin-left: auto;
+  max-width: 50%;
+  padding: 10px 13px;
+  text-align: right;
+}
+
+.botMessage {
+  background: transparent;
+  color: #ffff;
+  padding: 15px;
+  border: 1.5px solid rgba(18,18,18);
+  max-width: 80%;
+  margin-right: auto;
+  text-align: left;
+}
